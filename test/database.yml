@@ -1,0 +1,18 @@
+sqlite:
+  :adapter: sqlite
+  :database: acts_as_wz_publishable_gem.sqlite.db
+sqlite3:
+  :adapter: sqlite3
+  :database: acts_as_wz_publishable_gem.sqlite3.db
+postgresql:
+  :adapter: postgresql
+  :username: postgres
+  :password: postgres
+  :database: acts_as_wz_publishable_gem_test
+  :min_messages: ERROR
+mysql:
+  :adapter: mysql
+  :host: localhost
+  :username: rails
+  :password:
+  :database: acts_as_wz_publishable_gem_test

@@ -15,14 +15,16 @@ Jeweler::Tasks.new do |gem|
   gem.name = "acts_as_wz_publishable"
   gem.homepage = "http://github.com/lorgio/acts_as_wz_publishable"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{acts as wz publishable}
+  gem.description = %Q{add publishing workflow to models}
   gem.email = "lorgio.jimenez@gmail.com"
   gem.authors = ["Lorgio Jimenez"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_dependency "aasm", ">= 0"
+  
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -39,6 +41,7 @@ Rcov::RcovTask.new do |test|
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
 end
+task :test => :check_dependencies
 
 task :default => :test
 

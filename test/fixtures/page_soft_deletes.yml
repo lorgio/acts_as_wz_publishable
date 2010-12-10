@@ -1,0 +1,11 @@
+one:
+  id: 1
+  title: Welcome to the weblog
+  body: Such a lovely day
+  created_on: "2008-01-01 00:00:00"
+  publish_id: 1
+  publish_state: draft
+  publish_state_at: "2008-01-01 00:00:00"
+  archived: false
+  revision: 4
+  deleted: false
